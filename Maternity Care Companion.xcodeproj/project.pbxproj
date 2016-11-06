@@ -12,6 +12,12 @@
 		E7137C7E1DCE56D20070BA97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7137C7C1DCE56D20070BA97 /* Main.storyboard */; };
 		E7137C801DCE56D20070BA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7137C7F1DCE56D20070BA97 /* Assets.xcassets */; };
 		E7137C831DCE56D20070BA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7137C811DCE56D20070BA97 /* LaunchScreen.storyboard */; };
+		E7137C8D1DCE58F10070BA97 /* GestationalAgeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137C8C1DCE58F10070BA97 /* GestationalAgeCalculator.swift */; };
+		E7137C8F1DCE87990070BA97 /* BishopScoreCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137C8E1DCE87990070BA97 /* BishopScoreCalculator.swift */; };
+		E7137C911DCE8DDD0070BA97 /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137C901DCE8DDD0070BA97 /* BMICalculator.swift */; };
+		E7137C931DCE95680070BA97 /* WeightConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137C921DCE95680070BA97 /* WeightConverter.swift */; };
+		E7137C951DCEB5DA0070BA97 /* BloodResultsRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137C941DCEB5DA0070BA97 /* BloodResultsRanges.swift */; };
+		E7137C971DCEB7F10070BA97 /* BloodResultsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137C961DCEB7F10070BA97 /* BloodResultsTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		E7137C7F1DCE56D20070BA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7137C821DCE56D20070BA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7137C841DCE56D20070BA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7137C8C1DCE58F10070BA97 /* GestationalAgeCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestationalAgeCalculator.swift; sourceTree = "<group>"; };
+		E7137C8E1DCE87990070BA97 /* BishopScoreCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BishopScoreCalculator.swift; sourceTree = "<group>"; };
+		E7137C901DCE8DDD0070BA97 /* BMICalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
+		E7137C921DCE95680070BA97 /* WeightConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightConverter.swift; sourceTree = "<group>"; };
+		E7137C941DCEB5DA0070BA97 /* BloodResultsRanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodResultsRanges.swift; sourceTree = "<group>"; };
+		E7137C961DCEB7F10070BA97 /* BloodResultsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodResultsTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,36 @@
 		E7137C771DCE56D20070BA97 /* Maternity Care Companion */ = {
 			isa = PBXGroup;
 			children = (
+				E7137C8B1DCE58D00070BA97 /* Controller */,
+				E7137C8A1DCE58C70070BA97 /* View */,
 				E7137C781DCE56D20070BA97 /* AppDelegate.swift */,
-				E7137C7A1DCE56D20070BA97 /* ViewController.swift */,
-				E7137C7C1DCE56D20070BA97 /* Main.storyboard */,
 				E7137C7F1DCE56D20070BA97 /* Assets.xcassets */,
 				E7137C811DCE56D20070BA97 /* LaunchScreen.storyboard */,
 				E7137C841DCE56D20070BA97 /* Info.plist */,
 			);
 			path = "Maternity Care Companion";
+			sourceTree = "<group>";
+		};
+		E7137C8A1DCE58C70070BA97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7137C7C1DCE56D20070BA97 /* Main.storyboard */,
+				E7137C961DCEB7F10070BA97 /* BloodResultsTableCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E7137C8B1DCE58D00070BA97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7137C7A1DCE56D20070BA97 /* ViewController.swift */,
+				E7137C8C1DCE58F10070BA97 /* GestationalAgeCalculator.swift */,
+				E7137C8E1DCE87990070BA97 /* BishopScoreCalculator.swift */,
+				E7137C901DCE8DDD0070BA97 /* BMICalculator.swift */,
+				E7137C921DCE95680070BA97 /* WeightConverter.swift */,
+				E7137C941DCEB5DA0070BA97 /* BloodResultsRanges.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7137C971DCEB7F10070BA97 /* BloodResultsTableCell.swift in Sources */,
+				E7137C8D1DCE58F10070BA97 /* GestationalAgeCalculator.swift in Sources */,
+				E7137C8F1DCE87990070BA97 /* BishopScoreCalculator.swift in Sources */,
+				E7137C911DCE8DDD0070BA97 /* BMICalculator.swift in Sources */,
 				E7137C7B1DCE56D20070BA97 /* ViewController.swift in Sources */,
+				E7137C931DCE95680070BA97 /* WeightConverter.swift in Sources */,
 				E7137C791DCE56D20070BA97 /* AppDelegate.swift in Sources */,
+				E7137C951DCEB5DA0070BA97 /* BloodResultsRanges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +301,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9MT4EUS42Y;
 				INFOPLIST_FILE = "Maternity Care Companion/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zaima.Maternity-Care-Companion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,8 +317,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9MT4EUS42Y;
 				INFOPLIST_FILE = "Maternity Care Companion/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zaima.Maternity-Care-Companion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +348,7 @@
 				E7137C891DCE56D20070BA97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
