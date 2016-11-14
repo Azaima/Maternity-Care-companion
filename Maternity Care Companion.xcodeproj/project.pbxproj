@@ -18,6 +18,16 @@
 		E7137C931DCE95680070BA97 /* WeightConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137C921DCE95680070BA97 /* WeightConverter.swift */; };
 		E7137C951DCEB5DA0070BA97 /* BloodResultsRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137C941DCEB5DA0070BA97 /* BloodResultsRanges.swift */; };
 		E7137C971DCEB7F10070BA97 /* BloodResultsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137C961DCEB7F10070BA97 /* BloodResultsTableCell.swift */; };
+		E74B87A61DD347020079DAB9 /* FluidVolumeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B87A51DD347020079DAB9 /* FluidVolumeCalculator.swift */; };
+		E74B87A81DD34C210079DAB9 /* FluidBalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B87A71DD34C210079DAB9 /* FluidBalanceCell.swift */; };
+		E74B87AA1DD3EAD90079DAB9 /* VenousThromboEmbolismVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B87A91DD3EAD90079DAB9 /* VenousThromboEmbolismVC.swift */; };
+		E74B87B11DD5CCAD0079DAB9 /* Algorythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B87B01DD5CCAD0079DAB9 /* Algorythm.swift */; };
+		E761B3461DD8F7D6006E17D6 /* VTEScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761B3451DD8F7D6006E17D6 /* VTEScoreCell.swift */; };
+		E7CE5D711DD5D53D0052116F /* BorderedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE5D701DD5D53D0052116F /* BorderedLabel.swift */; };
+		E7CE5D751DD5D7810052116F /* ColouredLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE5D741DD5D7810052116F /* ColouredLabel.swift */; };
+		E7CE5D771DD5DA520052116F /* DownArrowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE5D761DD5DA520052116F /* DownArrowImage.swift */; };
+		E7CE5D791DD5DC900052116F /* YesNoSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE5D781DD5DC900052116F /* YesNoSegmentedControl.swift */; };
+		E7CE5D7D1DD79F6F0052116F /* QuestionComplex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE5D7C1DD79F6F0052116F /* QuestionComplex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +44,16 @@
 		E7137C921DCE95680070BA97 /* WeightConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightConverter.swift; sourceTree = "<group>"; };
 		E7137C941DCEB5DA0070BA97 /* BloodResultsRanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodResultsRanges.swift; sourceTree = "<group>"; };
 		E7137C961DCEB7F10070BA97 /* BloodResultsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodResultsTableCell.swift; sourceTree = "<group>"; };
+		E74B87A51DD347020079DAB9 /* FluidVolumeCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidVolumeCalculator.swift; sourceTree = "<group>"; };
+		E74B87A71DD34C210079DAB9 /* FluidBalanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidBalanceCell.swift; sourceTree = "<group>"; };
+		E74B87A91DD3EAD90079DAB9 /* VenousThromboEmbolismVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenousThromboEmbolismVC.swift; sourceTree = "<group>"; };
+		E74B87B01DD5CCAD0079DAB9 /* Algorythm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorythm.swift; sourceTree = "<group>"; };
+		E761B3451DD8F7D6006E17D6 /* VTEScoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTEScoreCell.swift; sourceTree = "<group>"; };
+		E7CE5D701DD5D53D0052116F /* BorderedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedLabel.swift; sourceTree = "<group>"; };
+		E7CE5D741DD5D7810052116F /* ColouredLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColouredLabel.swift; sourceTree = "<group>"; };
+		E7CE5D761DD5DA520052116F /* DownArrowImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownArrowImage.swift; sourceTree = "<group>"; };
+		E7CE5D781DD5DC900052116F /* YesNoSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YesNoSegmentedControl.swift; sourceTree = "<group>"; };
+		E7CE5D7C1DD79F6F0052116F /* QuestionComplex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionComplex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +86,7 @@
 		E7137C771DCE56D20070BA97 /* Maternity Care Companion */ = {
 			isa = PBXGroup;
 			children = (
+				E74B87AB1DD455F10079DAB9 /* Model */,
 				E7137C8B1DCE58D00070BA97 /* Controller */,
 				E7137C8A1DCE58C70070BA97 /* View */,
 				E7137C781DCE56D20070BA97 /* AppDelegate.swift */,
@@ -81,6 +102,8 @@
 			children = (
 				E7137C7C1DCE56D20070BA97 /* Main.storyboard */,
 				E7137C961DCEB7F10070BA97 /* BloodResultsTableCell.swift */,
+				E74B87A71DD34C210079DAB9 /* FluidBalanceCell.swift */,
+				E761B3451DD8F7D6006E17D6 /* VTEScoreCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -94,8 +117,23 @@
 				E7137C901DCE8DDD0070BA97 /* BMICalculator.swift */,
 				E7137C921DCE95680070BA97 /* WeightConverter.swift */,
 				E7137C941DCEB5DA0070BA97 /* BloodResultsRanges.swift */,
+				E74B87A51DD347020079DAB9 /* FluidVolumeCalculator.swift */,
+				E74B87A91DD3EAD90079DAB9 /* VenousThromboEmbolismVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		E74B87AB1DD455F10079DAB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E74B87B01DD5CCAD0079DAB9 /* Algorythm.swift */,
+				E7CE5D701DD5D53D0052116F /* BorderedLabel.swift */,
+				E7CE5D741DD5D7810052116F /* ColouredLabel.swift */,
+				E7CE5D761DD5DA520052116F /* DownArrowImage.swift */,
+				E7CE5D781DD5DC900052116F /* YesNoSegmentedControl.swift */,
+				E7CE5D7C1DD79F6F0052116F /* QuestionComplex.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,14 +209,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E761B3461DD8F7D6006E17D6 /* VTEScoreCell.swift in Sources */,
 				E7137C971DCEB7F10070BA97 /* BloodResultsTableCell.swift in Sources */,
+				E7CE5D7D1DD79F6F0052116F /* QuestionComplex.swift in Sources */,
+				E7CE5D791DD5DC900052116F /* YesNoSegmentedControl.swift in Sources */,
 				E7137C8D1DCE58F10070BA97 /* GestationalAgeCalculator.swift in Sources */,
 				E7137C8F1DCE87990070BA97 /* BishopScoreCalculator.swift in Sources */,
+				E7CE5D751DD5D7810052116F /* ColouredLabel.swift in Sources */,
+				E74B87AA1DD3EAD90079DAB9 /* VenousThromboEmbolismVC.swift in Sources */,
 				E7137C911DCE8DDD0070BA97 /* BMICalculator.swift in Sources */,
 				E7137C7B1DCE56D20070BA97 /* ViewController.swift in Sources */,
 				E7137C931DCE95680070BA97 /* WeightConverter.swift in Sources */,
+				E74B87A61DD347020079DAB9 /* FluidVolumeCalculator.swift in Sources */,
 				E7137C791DCE56D20070BA97 /* AppDelegate.swift in Sources */,
+				E7CE5D711DD5D53D0052116F /* BorderedLabel.swift in Sources */,
+				E74B87B11DD5CCAD0079DAB9 /* Algorythm.swift in Sources */,
 				E7137C951DCEB5DA0070BA97 /* BloodResultsRanges.swift in Sources */,
+				E7CE5D771DD5DA520052116F /* DownArrowImage.swift in Sources */,
+				E74B87A81DD34C210079DAB9 /* FluidBalanceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +357,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zaima.Maternity-Care-Companion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -325,7 +375,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zaima.Maternity-Care-Companion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};

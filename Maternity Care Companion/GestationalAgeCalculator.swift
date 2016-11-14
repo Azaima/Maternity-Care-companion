@@ -42,7 +42,11 @@ class GestationalAgeCalculator: UIViewController {
     
     
     func checkDateAndUpdateLabel() {
-        intervalFromDate = datePicker.date.timeIntervalSinceNow
+        dateFormatter.dateFormat = "YYYY/MM/dd"
+        let dateToday = dateFormatter.date(from: dateFormatter.string(from: date))
+        
+        intervalFromDate = datePicker.date.timeIntervalSince(dateToday!)
+        
         let intervalInDays = Int(intervalFromDate) / 86400
         switch gestationalAgeFromSelector.selectedSegmentIndex {
         case 0:
