@@ -12,6 +12,7 @@ class BMICalculator: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
 
     @IBOutlet weak var weightAndHeightPickeer: UIPickerView!
     @IBOutlet weak var bmiLabel: UILabel!
+    @IBOutlet weak var bsaLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,15 +51,22 @@ class BMICalculator: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     func updateBMILabel() {
         
+        var bsa: Double
         var bmi: Double
         var weight: Double
         var height: Double
         
         weight = Double(weightAndHeightPickeer.selectedRow(inComponent: 0) + 30)
         height = Double(weightAndHeightPickeer.selectedRow(inComponent: 1) + 100) / 100
-        bmi = Double(Int(weight * 100 / (height * height))) / 100
+        bmi = weight / pow(height , 2)
+        bsa = 0.007184 * pow(weight, 0.425) * pow((height * 100), 0.725)
+        
+        bmi = Double(Int(bmi * 10)) / 10
+        bsa = Double(Int(bsa * 100)) / 100
         
         bmiLabel.text = "BMI = \(bmi)"
+        bsaLabel.text = "BSA = \(bsa)"
+        
     }
 
     @IBAction func backButtonPressed(_ sender: Any) {

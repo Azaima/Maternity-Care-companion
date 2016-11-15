@@ -80,7 +80,7 @@ class VenousThromboEmbolismVC: UIViewController, UIPickerViewDelegate, UIPickerV
          ("Stillbirth in current pregnancy", 1)],
         [("Any surgical procedure in pregnancy or puerperium except immediate repair of the perineum", 3),
          ("Hyperemesis", 3),
-         ("OHSS (first trimester only)", 4),
+         ("OHSS", 4),
          ("Current systemic infection", 1),
          ("Immobility, dehydration", 1)]
     ]
@@ -202,6 +202,9 @@ class VenousThromboEmbolismVC: UIViewController, UIPickerViewDelegate, UIPickerV
             
             secondarySegmentSelected(sender)
         default:
+            if secondarySegmentControl.numberOfSegments == 4 {
+                secondarySegmentControl.removeSegment(at: 3, animated: true)
+            }
             secondarySegmentControl.removeSegment(at: 2, animated: true)
             secondarySegmentControl.setTitle("VTE Risk Score", forSegmentAt: 0)
             secondarySegmentControl.setTitle("PE Diagnostic Algorythm", forSegmentAt: 1)
@@ -610,6 +613,8 @@ class VenousThromboEmbolismVC: UIViewController, UIPickerViewDelegate, UIPickerV
                 let riskLabel = UILabel(frame: CGRect(x: 0, y: finalY, width: Int(vteScrollView.frame.size.width - 100), height: 30))
                 riskLabel.text = risk.0
                 riskLabel.backgroundColor = .white
+                riskLabel.numberOfLines = 2
+                riskLabel.adjustsFontSizeToFitWidth = true
                 vteScoreLabels.append(riskLabel)
                 
                 let riskSegmentControl = YesNoSegmentedControl(colour: .white, tintColour: .blue)
@@ -797,8 +802,9 @@ class VenousThromboEmbolismVC: UIViewController, UIPickerViewDelegate, UIPickerV
         if peAlgorythm.questionsForLabels[labelNum] != -1 {
             finalY = addQuestionLabelToAlgorythm(question: peAlgorythm.questionsForLabels[labelNum], yPoint: finalY)
         }
-        
-        vteScrollView.setContentOffset(CGPoint(x: 0, y: finalY - Int(vteScrollView.frame.size.height)), animated: true)
+        if finalY > Int(vteScrollView.frame.size.height){
+            vteScrollView.setContentOffset(CGPoint(x: 0, y: finalY - Int(vteScrollView.frame.size.height)), animated: true)
+        }
         return finalY
     }
     
@@ -823,8 +829,9 @@ class VenousThromboEmbolismVC: UIViewController, UIPickerViewDelegate, UIPickerV
         questionSegmentedControl.center = CGPoint(x: Int(vteScrollView.center.x), y: yPoint + 30 + Int(questionLabel.frame.size.height) + Int(questionSegmentedControl.frame.size.height / 2))
         
         let finalY = yPoint + 30 + Int(questionLabel.frame.size.height) + Int(questionSegmentedControl.frame.size.height)
-        
-        vteScrollView.setContentOffset(CGPoint(x: 0, y: finalY - Int(vteScrollView.frame.size.height)), animated: true)
+        if finalY > Int(vteScrollView.frame.size.height){
+            vteScrollView.setContentOffset(CGPoint(x: 0, y: finalY - Int(vteScrollView.frame.size.height)), animated: true)
+        }
         return finalY
     }
     
