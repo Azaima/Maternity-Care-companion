@@ -14,8 +14,8 @@ class ShowProcedureVC: UIViewController {
     @IBOutlet weak var procedureImage: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
     
-    var header = "Procedure"
-    var stepsArray = [(String, UIImage?)]()
+    
+    var procedure: Procedure!
     var step = 0 {
         didSet{
             updateView()
@@ -25,15 +25,18 @@ class ShowProcedureVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        pageHeaderLabel.text = header
+        pageHeaderLabel.text = procedure.procedureName
         updateView()
     }
 
     func updateView(){
-            commentLabel.text = stepsArray[step].0
-        
-        
-            procedureImage.image = stepsArray[step].1
+        commentLabel.text = procedure.commentsArray[step]
+        if procedure.linksToImages.contains(step){
+            let number = procedure.linksToImages.index(of: step)
+            procedureImage.image = procedure.imagesArray[number!]
+        } else {
+            procedureImage.image = nil
+        }
         
     }
     
@@ -46,7 +49,7 @@ class ShowProcedureVC: UIViewController {
     
     @IBAction func nextButtonPressed(_ sender: Any) {
         
-        if step != stepsArray.count - 1 {
+        if step != procedure.commentsArray.count - 1 {
             step += 1
         }
     }
