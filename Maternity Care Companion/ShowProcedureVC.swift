@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ShowProcedureVC: UIViewController {
+class ShowProcedureVC: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var pageHeaderLabel: UILabel!
     @IBOutlet weak var procedureImage: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var scroller: UIScrollView!
     
     
     var procedure: Procedure!
@@ -27,6 +28,10 @@ class ShowProcedureVC: UIViewController {
 
         pageHeaderLabel.text = procedure.procedureName
         updateView()
+        scroller.delegate = self
+        scroller.minimumZoomScale = 0.75
+        scroller.maximumZoomScale = 2.0
+        
     }
 
     func updateView(){
@@ -38,6 +43,10 @@ class ShowProcedureVC: UIViewController {
             procedureImage.image = nil
         }
         
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return procedureImage
     }
     
     @IBAction func previousButtonPressed(_ sender: Any) {

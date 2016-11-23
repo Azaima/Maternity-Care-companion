@@ -8,13 +8,18 @@
 
 import UIKit
 
-class CTGClassification: UIViewController {
+class CTGClassification: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var classifScrollView: UIScrollView!
     @IBOutlet weak var classificationImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        classifScrollView.delegate = self
+        classifScrollView.minimumZoomScale = 0.75
+        classifScrollView.maximumZoomScale = 2.0
 
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func classificationSelected(_ sender: Any) {
@@ -29,11 +34,15 @@ class CTGClassification: UIViewController {
             classificationImage.image = #imageLiteral(resourceName: "CTG_STAN")
         }
     }
-    @IBAction func pinchClassificationImage(_ sender: Any) {
-        let scale = (sender as! UIPinchGestureRecognizer).scale
-        classificationImage.frame.size = CGSize(width: Int(classificationImage.frame.size.width * scale), height: Int(classificationImage.frame.size.height * scale))
+
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return classificationImage
     }
+    
+    
    
+    
+    
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

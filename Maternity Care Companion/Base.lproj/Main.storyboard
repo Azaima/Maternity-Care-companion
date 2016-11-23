@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,164 +37,148 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="4" height="-1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcz-FT-JHu">
-                                <rect key="frame" x="113" y="128" width="150" height="40"/>
-                                <color key="backgroundColor" red="0.42289162270000002" green="0.83458725" blue="0.28086914439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jIo-gY-Faw">
+                                <rect key="frame" x="15" y="128" width="346" height="519"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcz-FT-JHu">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="50.5"/>
+                                        <color key="backgroundColor" red="0.42289162270000002" green="0.83458725" blue="0.28086914439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="GA Calculator">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowEffect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Pl8-Ez-297" kind="show" id="z5f-gb-gs4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BU-uR-3gB">
+                                        <rect key="frame" x="0.0" y="58.5" width="346" height="50.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Blood Result Ranges">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowEffect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="1uy-Os-TNy" kind="show" id="Rx8-xL-A4p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfK-aX-c3a">
+                                        <rect key="frame" x="0.0" y="117" width="346" height="50.5"/>
+                                        <color key="backgroundColor" red="1" green="0.58266855559999997" blue="0.099067477030000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Bishop Score">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowEffect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="dXi-KS-Xab" kind="show" id="aXD-5c-cfs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjc-ED-fdI">
+                                        <rect key="frame" x="0.0" y="175.5" width="346" height="50.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="BMI and BSA Calculator">
+                                            <color key="titleColor" red="0.0" green="0.088700845510000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowEffect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="q7F-OD-0s2" kind="show" id="m7D-Xu-ghw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcC-kK-1Qd">
+                                        <rect key="frame" x="0.0" y="234" width="346" height="51"/>
+                                        <color key="backgroundColor" red="1" green="0.26383573290000001" blue="0.33043705940000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Weight Converter">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowEffect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="yYG-sR-uZG" kind="show" id="tTl-TZ-SXD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58c-Yq-uLr">
+                                        <rect key="frame" x="0.0" y="293" width="346" height="50.5"/>
+                                        <color key="backgroundColor" red="0.46755683570995565" green="0.98824159263959388" blue="0.79067135162679536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Fluid Balance Calculator">
+                                            <color key="titleColor" red="0.12373517675191749" green="0.16605747280446886" blue="0.98824159263959388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowEffect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="7R9-LL-b9f" kind="show" id="5kc-pM-JfY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R1-Ve-w2g">
+                                        <rect key="frame" x="0.0" y="351.5" width="346" height="50.5"/>
+                                        <color key="backgroundColor" red="0.65351364213197971" green="0.38292905678442141" blue="0.038302755232529261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="VTE">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowEffect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="aGW-pk-wwD" kind="show" id="ip9-Gt-qfn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQD-JK-3vs">
+                                        <rect key="frame" x="0.0" y="410" width="346" height="50.5"/>
+                                        <color key="backgroundColor" red="0.65742773724623182" green="0.10801673067772988" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="CTG Classification">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowEffect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="sm5-Xi-Mgo" kind="show" id="EpB-pu-uiA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yY4-r8-R2e">
+                                        <rect key="frame" x="0.0" y="468.5" width="346" height="50.5"/>
+                                        <color key="backgroundColor" red="0.081649743902459423" green="0.11266755469605134" blue="0.67098270935126902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Procedures and Protocols">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowEffect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="1Wa-hj-f3e" kind="show" identifier="ProceduresAndProtocols" id="kpP-Kn-Ver"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="gqq-4t-Eqx"/>
-                                    <constraint firstAttribute="width" constant="150" id="x8k-WQ-hid"/>
+                                    <constraint firstAttribute="width" secondItem="jIo-gY-Faw" secondAttribute="height" multiplier="146:519" constant="200" id="7pM-qF-Z8g"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="GA Calculator">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Pl8-Ez-297" kind="show" id="z5f-gb-gs4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BU-uR-3gB">
-                                <rect key="frame" x="113" y="176" width="150" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="nT9-zM-INf"/>
-                                    <constraint firstAttribute="height" constant="40" id="rst-eV-HFS"/>
-                                </constraints>
-                                <state key="normal" title="Blood Result Ranges">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="1uy-Os-TNy" kind="show" id="Rx8-xL-A4p"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjc-ED-fdI">
-                                <rect key="frame" x="113" y="272" width="150" height="40"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="RjI-4D-5U6"/>
-                                    <constraint firstAttribute="height" constant="40" id="dZo-Ge-eLx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="BMI and BSA Calculator">
-                                    <color key="titleColor" red="0.0" green="0.088700845510000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="q7F-OD-0s2" kind="show" id="m7D-Xu-ghw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfK-aX-c3a">
-                                <rect key="frame" x="113" y="224" width="150" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.58266855559999997" blue="0.099067477030000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="cqP-sH-3Hq"/>
-                                    <constraint firstAttribute="height" constant="40" id="xun-Cz-7cx"/>
-                                </constraints>
-                                <state key="normal" title="Bishop Score">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dXi-KS-Xab" kind="show" id="aXD-5c-cfs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcC-kK-1Qd">
-                                <rect key="frame" x="113" y="320" width="150" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.26383573290000001" blue="0.33043705940000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="DxV-AH-R4k"/>
-                                    <constraint firstAttribute="width" constant="150" id="wSY-hV-Htu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Weight Converter">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="yYG-sR-uZG" kind="show" id="tTl-TZ-SXD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58c-Yq-uLr">
-                                <rect key="frame" x="113" y="368" width="150" height="40"/>
-                                <color key="backgroundColor" red="0.46755683570995565" green="0.98824159263959388" blue="0.79067135162679536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="2gK-Ph-0Oj"/>
-                                    <constraint firstAttribute="width" constant="150" id="PPX-lD-yFr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Fluid Balance Calculator">
-                                    <color key="titleColor" red="0.12373517675191749" green="0.16605747280446886" blue="0.98824159263959388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="7R9-LL-b9f" kind="show" id="5kc-pM-JfY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R1-Ve-w2g">
-                                <rect key="frame" x="113" y="416" width="150" height="40"/>
-                                <color key="backgroundColor" red="0.65351364213197971" green="0.38292905678442141" blue="0.038302755232529261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="C30-Gm-xEN"/>
-                                    <constraint firstAttribute="width" constant="150" id="oz8-ob-hwR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="VTE">
-                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="aGW-pk-wwD" kind="show" id="ip9-Gt-qfn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQD-JK-3vs">
-                                <rect key="frame" x="112.5" y="464" width="150" height="40"/>
-                                <color key="backgroundColor" red="0.65742773724623182" green="0.10801673067772988" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="9JQ-Y6-P2s"/>
-                                    <constraint firstAttribute="height" constant="40" id="VlW-MF-rdA"/>
-                                </constraints>
-                                <state key="normal" title="CTG Classification">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="sm5-Xi-Mgo" kind="show" id="EpB-pu-uiA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yY4-r8-R2e">
-                                <rect key="frame" x="112.5" y="512" width="150" height="40"/>
-                                <color key="backgroundColor" red="0.081649743902459423" green="0.11266755469605134" blue="0.67098270935126902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="9iw-aD-n3h"/>
-                                    <constraint firstAttribute="height" constant="40" id="ZKX-Ge-L4O"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Procedures and Protocols">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="1Wa-hj-f3e" kind="show" identifier="ProceduresAndProtocols" id="kpP-Kn-Ver"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hfK-aX-c3a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="29b-uz-GYA"/>
                             <constraint firstItem="5iN-CZ-GiG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="6mZ-V9-Gfx"/>
-                            <constraint firstItem="OcC-kK-1Qd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Yo-Cf-24b"/>
                             <constraint firstItem="HIn-we-ORz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dnw-Hs-6TM"/>
-                            <constraint firstItem="4R1-Ve-w2g" firstAttribute="top" secondItem="58c-Yq-uLr" secondAttribute="bottom" constant="8" id="Fa2-cK-iix"/>
-                            <constraint firstItem="58c-Yq-uLr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fbb-CY-5lJ"/>
-                            <constraint firstItem="yY4-r8-R2e" firstAttribute="top" secondItem="JQD-JK-3vs" secondAttribute="bottom" constant="8" id="GMH-X6-oNZ"/>
                             <constraint firstAttribute="trailing" secondItem="5iN-CZ-GiG" secondAttribute="trailing" constant="20" id="HvM-lg-1Ti"/>
-                            <constraint firstItem="JQD-JK-3vs" firstAttribute="top" secondItem="4R1-Ve-w2g" secondAttribute="bottom" constant="8" id="PfX-2c-uRt"/>
-                            <constraint firstItem="58c-Yq-uLr" firstAttribute="top" secondItem="OcC-kK-1Qd" secondAttribute="bottom" constant="8" id="R7E-Mu-zCw"/>
+                            <constraint firstItem="jIo-gY-Faw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PI6-Ov-zEC"/>
                             <constraint firstItem="HIn-we-ORz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SZL-1X-8hF"/>
-                            <constraint firstItem="OcC-kK-1Qd" firstAttribute="top" secondItem="Jjc-ED-fdI" secondAttribute="bottom" constant="8" id="UlN-UW-0Cb"/>
-                            <constraint firstItem="fcz-FT-JHu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aEh-k8-05s"/>
-                            <constraint firstItem="2BU-uR-3gB" firstAttribute="top" secondItem="fcz-FT-JHu" secondAttribute="bottom" constant="8" id="gyJ-WR-VHt"/>
-                            <constraint firstItem="2BU-uR-3gB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jBo-W4-LiQ"/>
-                            <constraint firstItem="Jjc-ED-fdI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kYg-8k-SrS"/>
-                            <constraint firstItem="hfK-aX-c3a" firstAttribute="top" secondItem="2BU-uR-3gB" secondAttribute="bottom" constant="8" id="l1m-nK-iKw"/>
+                            <constraint firstItem="jIo-gY-Faw" firstAttribute="top" secondItem="5iN-CZ-GiG" secondAttribute="bottom" constant="8" id="WPo-6k-Y3B"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jIo-gY-Faw" secondAttribute="bottom" constant="20" id="hyu-4q-J7e"/>
                             <constraint firstAttribute="trailing" secondItem="HIn-we-ORz" secondAttribute="trailing" id="nDb-wc-tfV"/>
-                            <constraint firstItem="JQD-JK-3vs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pZz-Un-WSB"/>
-                            <constraint firstItem="Jjc-ED-fdI" firstAttribute="top" secondItem="hfK-aX-c3a" secondAttribute="bottom" constant="8" id="qah-z6-gi1"/>
-                            <constraint firstItem="fcz-FT-JHu" firstAttribute="top" secondItem="5iN-CZ-GiG" secondAttribute="bottom" constant="8" id="rLc-QN-kH3"/>
-                            <constraint firstItem="4R1-Ve-w2g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tRC-A1-EOz"/>
-                            <constraint firstItem="yY4-r8-R2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v5W-5b-oBV"/>
                             <constraint firstItem="5iN-CZ-GiG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="zeD-P4-IYe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HIn-we-ORz" secondAttribute="bottom" id="zko-1a-E3r"/>
                         </constraints>
@@ -586,34 +571,41 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ajc-bP-k9G">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcC-6L-LnV">
                                 <rect key="frame" x="16" y="108" width="343" height="325"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5BT-pa-qLg">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="325"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.51586888559999999" green="0.58547558259999999" blue="0.88467639590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="l95-Hb-ZjR" firstAttribute="leading" secondItem="BBj-EF-htm" secondAttribute="leadingMargin" id="1h0-En-mTz"/>
                             <constraint firstItem="BBf-tB-5qw" firstAttribute="top" secondItem="ZwC-Ot-2Yt" secondAttribute="bottom" constant="20" id="1kJ-3e-Kim"/>
                             <constraint firstItem="l95-Hb-ZjR" firstAttribute="top" secondItem="fVu-Z7-Fop" secondAttribute="bottom" constant="8" id="3XP-IF-jqQ"/>
-                            <constraint firstItem="Ajc-bP-k9G" firstAttribute="trailing" secondItem="BBj-EF-htm" secondAttribute="trailingMargin" id="3w5-yR-U6i"/>
                             <constraint firstItem="fVu-Z7-Fop" firstAttribute="leading" secondItem="BBj-EF-htm" secondAttribute="leadingMargin" id="5hd-6a-M5X"/>
+                            <constraint firstItem="wcC-6L-LnV" firstAttribute="trailing" secondItem="BBj-EF-htm" secondAttribute="trailingMargin" id="7gZ-7T-Ezp"/>
                             <constraint firstItem="gIP-eC-Vzc" firstAttribute="trailing" secondItem="BBj-EF-htm" secondAttribute="trailingMargin" id="7l1-fG-VUC"/>
                             <constraint firstItem="BZx-Km-gVH" firstAttribute="leading" secondItem="BBj-EF-htm" secondAttribute="leading" id="FrJ-hJ-C1V"/>
-                            <constraint firstItem="Ajc-bP-k9G" firstAttribute="leading" secondItem="BBj-EF-htm" secondAttribute="leadingMargin" id="HdC-Ya-Q9A"/>
                             <constraint firstItem="gIP-eC-Vzc" firstAttribute="centerY" secondItem="l95-Hb-ZjR" secondAttribute="centerY" id="JQ8-oM-6lM"/>
                             <constraint firstItem="ZwC-Ot-2Yt" firstAttribute="top" secondItem="l95-Hb-ZjR" secondAttribute="bottom" constant="8" id="JUS-MB-ZM4"/>
+                            <constraint firstItem="fVu-Z7-Fop" firstAttribute="top" secondItem="wcC-6L-LnV" secondAttribute="bottom" constant="8" id="NrD-Tw-k0S"/>
                             <constraint firstItem="BZx-Km-gVH" firstAttribute="top" secondItem="BBj-EF-htm" secondAttribute="top" id="TMn-Mu-ChT"/>
-                            <constraint firstItem="fVu-Z7-Fop" firstAttribute="top" secondItem="Ajc-bP-k9G" secondAttribute="bottom" constant="8" id="TdV-wF-4Or"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fVu-Z7-Fop" secondAttribute="trailing" id="eFJ-Ip-D0x"/>
-                            <constraint firstItem="Ajc-bP-k9G" firstAttribute="top" secondItem="BZx-Km-gVH" secondAttribute="bottom" constant="8" id="gMP-p8-HAR"/>
                             <constraint firstItem="ZwC-Ot-2Yt" firstAttribute="leading" secondItem="BBj-EF-htm" secondAttribute="leadingMargin" id="mvb-gl-DWF"/>
+                            <constraint firstItem="wcC-6L-LnV" firstAttribute="leading" secondItem="BBj-EF-htm" secondAttribute="leadingMargin" id="sO9-yq-rXd"/>
                             <constraint firstAttribute="trailing" secondItem="BZx-Km-gVH" secondAttribute="trailing" id="u0i-OY-U7V"/>
+                            <constraint firstItem="wcC-6L-LnV" firstAttribute="top" secondItem="BZx-Km-gVH" secondAttribute="bottom" constant="8" id="yWF-Ug-hqb"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="commentLabel" destination="fVu-Z7-Fop" id="Zbb-T8-w0o"/>
                         <outlet property="pageHeaderLabel" destination="BZx-Km-gVH" id="gfH-gZ-UmO"/>
-                        <outlet property="procedureImage" destination="Ajc-bP-k9G" id="WsM-8g-nZB"/>
+                        <outlet property="procedureImage" destination="5BT-pa-qLg" id="a3Q-zI-ZGW"/>
+                        <outlet property="scroller" destination="wcC-6L-LnV" id="m4e-bD-1fX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7Z-Dh-LyQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -663,11 +655,11 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Mw-eO-2u1" id="gx2-5U-Zqu">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lwV-If-ONC">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1107,14 +1099,14 @@
                                     <action selector="classificationSelected:" destination="sm5-Xi-Mgo" eventType="valueChanged" id="thP-ir-O40"/>
                                 </connections>
                             </segmentedControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epC-c2-3VZ">
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="epC-c2-3VZ">
                                 <rect key="frame" x="16" y="144" width="343" height="455"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CTG_FIGO_2015" translatesAutoresizingMaskIntoConstraints="NO" id="WQr-qv-sUK">
                                         <rect key="frame" x="0.0" y="0.0" width="621" height="633"/>
                                         <gestureRecognizers/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="WZF-kt-N5a" appends="YES" id="TtT-CX-Ny4"/>
+                                            <outletCollection property="gestureRecognizers" destination="VOK-G0-Yp7" appends="YES" id="TGq-7h-SXX"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
@@ -1143,15 +1135,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="classifScrollView" destination="epC-c2-3VZ" id="M86-7G-2WF"/>
                         <outlet property="classificationImage" destination="WQr-qv-sUK" id="OTw-wT-39e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdR-CF-9MZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="WZF-kt-N5a">
+                <tapGestureRecognizer id="VOK-G0-Yp7">
                     <connections>
-                        <action selector="pinchClassificationImage:" destination="sm5-Xi-Mgo" id="vUm-ao-GIs"/>
+                        <action selector="imageTapped:" destination="sm5-Xi-Mgo" id="5T4-Zb-f1N"/>
                     </connections>
-                </pinchGestureRecognizer>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-644" y="-532.98350824587715"/>
         </scene>
@@ -1238,6 +1231,10 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thromboprophylaxisClexane" translatesAutoresizingMaskIntoConstraints="NO" id="laa-6n-c85">
                                         <rect key="frame" x="8" y="8" width="1700" height="1133"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="bXU-Ay-nbK" appends="YES" id="cj0-1r-Lzf"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <gestureRecognizers/>
@@ -1283,6 +1280,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgZ-9i-DdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="bXU-Ay-nbK"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="-673.31334332833592"/>
         </scene>

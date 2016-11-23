@@ -22,6 +22,7 @@
 		E74B87A81DD34C210079DAB9 /* FluidBalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B87A71DD34C210079DAB9 /* FluidBalanceCell.swift */; };
 		E74B87AA1DD3EAD90079DAB9 /* VenousThromboEmbolismVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B87A91DD3EAD90079DAB9 /* VenousThromboEmbolismVC.swift */; };
 		E74B87B11DD5CCAD0079DAB9 /* Algorythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B87B01DD5CCAD0079DAB9 /* Algorythm.swift */; };
+		E77716931DE51DE00002DAEC /* ShadowEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77716921DE51DE00002DAEC /* ShadowEffect.swift */; };
 		E78B10891DDA703100C65849 /* CTGClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B10881DDA703100C65849 /* CTGClassification.swift */; };
 		E78B108B1DDA83A500C65849 /* ProceduresAndProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B108A1DDA83A500C65849 /* ProceduresAndProtocols.swift */; };
 		E78B108D1DDA89E600C65849 /* ShowProcedureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B108C1DDA89E600C65849 /* ShowProcedureVC.swift */; };
@@ -33,6 +34,7 @@
 		E7CE5D771DD5DA520052116F /* DownArrowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE5D761DD5DA520052116F /* DownArrowImage.swift */; };
 		E7CE5D791DD5DC900052116F /* YesNoSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE5D781DD5DC900052116F /* YesNoSegmentedControl.swift */; };
 		E7CE5D7D1DD79F6F0052116F /* QuestionComplex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE5D7C1DD79F6F0052116F /* QuestionComplex.swift */; };
+		E7E00ABC1DE5D0F000461B0D /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E00ABB1DE5D0F000461B0D /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,7 @@
 		E74B87A71DD34C210079DAB9 /* FluidBalanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidBalanceCell.swift; sourceTree = "<group>"; };
 		E74B87A91DD3EAD90079DAB9 /* VenousThromboEmbolismVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenousThromboEmbolismVC.swift; sourceTree = "<group>"; };
 		E74B87B01DD5CCAD0079DAB9 /* Algorythm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorythm.swift; sourceTree = "<group>"; };
+		E77716921DE51DE00002DAEC /* ShadowEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowEffect.swift; sourceTree = "<group>"; };
 		E78B10881DDA703100C65849 /* CTGClassification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTGClassification.swift; sourceTree = "<group>"; };
 		E78B108A1DDA83A500C65849 /* ProceduresAndProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProceduresAndProtocols.swift; sourceTree = "<group>"; };
 		E78B108C1DDA89E600C65849 /* ShowProcedureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProcedureVC.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		E7CE5D761DD5DA520052116F /* DownArrowImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownArrowImage.swift; sourceTree = "<group>"; };
 		E7CE5D781DD5DC900052116F /* YesNoSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YesNoSegmentedControl.swift; sourceTree = "<group>"; };
 		E7CE5D7C1DD79F6F0052116F /* QuestionComplex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionComplex.swift; sourceTree = "<group>"; };
+		E7E00ABB1DE5D0F000461B0D /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +118,11 @@
 		E7137C8A1DCE58C70070BA97 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E77716921DE51DE00002DAEC /* ShadowEffect.swift */,
 				E7137C7C1DCE56D20070BA97 /* Main.storyboard */,
 				E7137C961DCEB7F10070BA97 /* BloodResultsTableCell.swift */,
 				E74B87A71DD34C210079DAB9 /* FluidBalanceCell.swift */,
+				E7E00ABB1DE5D0F000461B0D /* AlertView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -198,7 +204,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
 								enabled = 1;
@@ -248,9 +254,11 @@
 				E78B10891DDA703100C65849 /* CTGClassification.swift in Sources */,
 				E7CE5D791DD5DC900052116F /* YesNoSegmentedControl.swift in Sources */,
 				E7137C8D1DCE58F10070BA97 /* GestationalAgeCalculator.swift in Sources */,
+				E7E00ABC1DE5D0F000461B0D /* AlertView.swift in Sources */,
 				E7137C8F1DCE87990070BA97 /* BishopScoreCalculator.swift in Sources */,
 				E7CD86071DDE819A002A0059 /* ProceduresAndProtocolsDatabase.swift in Sources */,
 				E7CE5D751DD5D7810052116F /* ColouredLabel.swift in Sources */,
+				E77716931DE51DE00002DAEC /* ShadowEffect.swift in Sources */,
 				E74B87AA1DD3EAD90079DAB9 /* VenousThromboEmbolismVC.swift in Sources */,
 				E7137C911DCE8DDD0070BA97 /* BMICalculator.swift in Sources */,
 				E78B108B1DDA83A500C65849 /* ProceduresAndProtocols.swift in Sources */,

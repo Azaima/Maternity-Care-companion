@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VenousThromboEmbolismVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+class VenousThromboEmbolismVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, UIScrollViewDelegate {
 
     @IBOutlet weak var pageSegmentControl: UISegmentedControl!
     @IBOutlet weak var secondarySegmentControl: UISegmentedControl!
@@ -112,9 +112,16 @@ class VenousThromboEmbolismVC: UIViewController, UIPickerViewDelegate, UIPickerV
         vteScrollView.clipsToBounds = true
         vteScrollView.contentSize.width = self.view.frame.size.width
         
+        vteScrollView.delegate = self
+        vteScrollView.minimumZoomScale = 0.75
+        vteScrollView.maximumZoomScale = 2.0
         
         setupPEAlgorythm()
         
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return scrollViewImage
     }
 
    
